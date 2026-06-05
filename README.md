@@ -1,9 +1,8 @@
 # IoT-Based Hand Rehabilitation Support System
 
-
 <table>
   <tr>
-    <td><img src=""https://github.com/user-attachments/assets/abf14948-dd71-494b-a9e0-fb750cf124be" alt="Robotic Glove Concept" width="500"/></td>
+    <td><img src="https://github.com/user-attachments/assets/abf14948-dd71-494b-a9e0-fb750cf124be" alt="Robotic Glove Concept" width="500"/></td>
     <td><img src="https://github.com/user-attachments/assets/380ff9c8-cc43-4be5-acfe-ae3113b47555" alt="System Architecture" width="500"/></td>
   </tr>
   <tr>
