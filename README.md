@@ -18,15 +18,9 @@ This project is designed as a prototype for finger/hand rehabilitation assistanc
 
 ## Project Context
 
-This repository is **Lehar Savla's contribution** to a larger group project — *Hand Rehabilitation using Robotic Glove* 
+## My Contributions
 
-| Component | Who built it | In this repo? |
-|---|---|---|
-| ESP32 firmware + web server | Lehar Savla | ✅ Yes |
-| Servo motor integration & rehab motion logic | Lehar Savla | ✅ Yes |
-| Embedded HTML/CSS exercise control interface | Lehar Savla | ✅ Yes (inside `.ino`) |
-| Python GUI — fixed exercise control panel | Teammate (rebuilt from above) | ❌ No |
-| Python GUI — finger angle detection (MediaPipe + OpenCV) | Teammate | ❌ No |
+I was responsible for the ESP32 firmware and embedded systems side of the project — programming the microcontroller, integrating the servo motors, and implementing the rehab motion logic for all three exercise modes. I also built the original exercise control interface using HTML and CSS, embedded directly into the Arduino firmware and served over Wi-Fi, which later formed the basis for the teammate's Python GUI. The web server architecture and Wi-Fi communication layer that connects the hardware to any control interface were fully designed and implemented by me.
 
 The embedded HTML/CSS interface in this repo was the **original working control interface** for the project. The teammate's Python GUI exercise control panel was built subsequently, based on this foundation.
 
