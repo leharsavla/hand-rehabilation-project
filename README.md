@@ -1,6 +1,6 @@
 # IoT-Based Hand Rehabilitation Support System
 
-<img width="1043" height="695" alt="image" src="https://github.com/user-attachments/assets/abf14948-dd71-494b-a9e0-fb750cf124be" />
+<img width="695" height="695" alt="image" src="https://github.com/user-attachments/assets/abf14948-dd71-494b-a9e0-fb750cf124be" />
 
 
 An IoT-based rehabilitation support system built using ESP32, Servo Motor, and an embedded web interface to perform simple hand therapy exercises wirelessly.
