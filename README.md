@@ -1,5 +1,7 @@
 # IoT-Based Hand Rehabilitation Support System
 
+<img width="1043" height="695" alt="image" src="https://github.com/user-attachments/assets/abf14948-dd71-494b-a9e0-fb750cf124be" />
+
 
 An IoT-based rehabilitation support system built using ESP32, Servo Motor, and an embedded web interface to perform simple hand therapy exercises wirelessly.
 
@@ -7,11 +9,20 @@ This project is designed as a prototype for finger/hand rehabilitation assistanc
 
 ## Project Context
 
-This repository contains **Lehar Savla's contribution** to a larger group project — *Hand Rehabilitation using Robotic Glove* — developed as part of  project in Electronics & Telecommunication Engineering.
+This repository is **Lehar Savla's contribution** to a larger group project — *Hand Rehabilitation using Robotic Glove* 
 
-**Full team:** Lehar Savla, Kashyap Dattani, Manav Bosmiya, Pranita Kakirde | **Guide:** Prof. Ameya Kadam
+| Component | Who built it | In this repo? |
+|---|---|---|
+| ESP32 firmware + web server | Lehar Savla | ✅ Yes |
+| Servo motor integration & rehab motion logic | Lehar Savla | ✅ Yes |
+| Embedded HTML/CSS exercise control interface | Lehar Savla | ✅ Yes (inside `.ino`) |
+| Python GUI — fixed exercise control panel | Teammate (rebuilt from above) | ❌ No |
+| Python GUI — finger angle detection (MediaPipe + OpenCV) | Teammate | ❌ No |
 
-This repo covers the ESP32 firmware, servo control logic, and the embedded HTML/CSS exercise control interface served directly from the microcontroller. The full group project additionally includes a Python GUI with finger angle detection using MediaPipe and OpenCV, developed by teammates and not part of this repository.
+The embedded HTML/CSS interface in this repo was the **original working control interface** for the project. The teammate's Python GUI exercise control panel was built subsequently, based on this foundation.
+
+The MediaPipe + OpenCV finger angle detection module is a separate computer vision component developed by a teammate and is not part of this repository.
+
 ## Project Overview
 
 This system uses an ESP32 microcontroller to host a local web server. When connected to the same Wi-Fi network, the user can open the ESP32's IP address in a browser and control the rehabilitation exercises through simple on-screen buttons.
@@ -48,7 +59,7 @@ This project can serve as a basic rehabilitation prototype and can be further ex
 - `WiFi.h`
 - `WebServer.h`
 - `ESP32Servo.h`
-
+- 
 ## Working Principle
 
 1. The ESP32 connects to a Wi-Fi network.
@@ -75,14 +86,29 @@ Each exercise is repeated 10 times by default.
 
 To avoid mechanical stress or unsafe movement:
 
-- Servo motion is restricted between **30° (minimum)** and **140° (maximum)**
+- Servo motion is restricted between **30° (minimum)** and **90° (maximum)**
 - A STOP command can interrupt the exercise at any time
+
+
+## Python GUI (Teammate's Component)
+
+The project also includes a Python-based desktop GUI developed by a teammate that communicates with the ESP32 over Wi-Fi. It consists of three separate windows:
+
+**Window 1 — Custom Speed Control**  
+Allows the user to manually set the servo motor speed using a slider. The servo sweeps from 0° to 90° at the selected speed, giving therapists fine-grained control over motion intensity.
+
+**Window 2 — Preset Exercise Control**  
+Contains the same 3 predefined rehabilitation exercises as the embedded interface (full range, partial range, hold and release). Exercises can be triggered directly from the GUI, which sends the corresponding commands to the ESP32 over Wi-Fi.
+
+**Window 3 — Finger Angle Detection**  
+Uses a live camera feed processed through MediaPipe and OpenCV to detect finger bending angle in real time. This allows the system to measure actual finger movement during rehabilitation, providing visual feedback on the patient's progress.
+
+> This GUI is not included in this repository. It was built separately by a teammate in Python.
+
 
 ## Future Extensions
 
 - Multi-finger control with independent servo channels
-- Serial command interface for external GUI control
+- Serial command interface as an alternative to Wi-Fi control
 - Sensor feedback for real-time finger position tracking
-- Integration with computer vision for gesture-based exercise triggering
-
-  <img width="1043" height="695" alt="image" src="https://github.com/user-attachments/assets/bdf4d823-8774-45aa-9d97-bd519d06be60" />
+- Integration of GUI angle detection with automated exercise triggering
