@@ -2,15 +2,29 @@
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/abf14948-dd71-494b-a9e0-fb750cf124be" alt="Robotic Glove Concept" width="500"/></td>
-    <td><img src="https://github.com/user-attachments/assets/380ff9c8-cc43-4be5-acfe-ae3113b47555" alt="System Architecture" width="500"/></td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/abf14948-dd71-494b-a9e0-fb750cf124be" alt="Robotic Glove Concept" width="450"/>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/380ff9c8-cc43-4be5-acfe-ae3113b47555" alt="System Architecture" width="450"/>
+    </td>
   </tr>
   <tr>
     <td align="center"><em>Robotic Glove — Finger Actuation Concept</em></td>
     <td align="center"><em>System Architecture & Workflow</em></td>
   </tr>
-</table>
 
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github.com/user-attachments/assets/1382d6ce-0454-4433-89e1-e25d27cb03c6" alt="Working Prototype" width="600"/>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <em>Working Prototype of the Tendon-Driven Finger Rehabilitation Glove</em>
+    </td>
+  </tr>
+</table>
 
 An IoT-based rehabilitation support system built using ESP32, Servo Motor, and an embedded web interface to perform simple hand therapy exercises wirelessly.
 
