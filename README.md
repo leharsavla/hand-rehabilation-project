@@ -16,7 +16,7 @@
 
   <tr>
     <td colspan="2" align="center">
-      <img src="https://github.com/user-attachments/assets/1382d6ce-0454-4433-89e1-e25d27cb03c6" alt="Working Prototype" width="600"/>
+      <img src="https://github.com/user-attachments/assets/7dee358b-d4da-4351-a875-1b3b2550b222" alt="Working Prototype" width="600"/>
     </td>
   </tr>
   <tr>
@@ -25,6 +25,7 @@
     </td>
   </tr>
 </table>
+<img width="2456" height="2802" alt="IMG_5215" src="https://github.com/user-attachments/assets/7dee358b-d4da-4351-a875-1b3b2550b222" />
 
 An IoT-based rehabilitation support system built using ESP32, Servo Motor, and an embedded web interface to perform simple hand therapy exercises wirelessly.
 
